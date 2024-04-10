@@ -1,10 +1,10 @@
-Golyó 2 fekete
-Iván 3 fehér
-Kacér 9 vörös
-Legény 7 fehér
-Pamacs 10 fekete
-Ubul 6 barna
-Walter 8 barna
-Falat 3 barna
-Zamat 2 tarka
-Bogyó 2 fehér
+Golyó hörcsög 2 fekete
+Iván kutya 3 fehér
+Kacér kutya 9 vörös
+Legény kutya 7 fehér
+Pamacs macska 10 fekete
+Ubul kutya 6 barna
+Walter kutya 8 barna
+Falat kutya 3 barna
+Zamat kutya 2 tarka
+Bogyó kutya 2 fehér

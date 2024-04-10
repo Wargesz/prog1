@@ -5,16 +5,17 @@ using namespace std;
 
 struct Allat{
 	string nev;
+	string fajta;
 	string kor;
 	string szin;
 };
 
 void operator>>(fstream& in, struct Allat& a) {
-	in>>a.nev>>a.kor>>a.szin;
+	in>>a.nev>>a.fajta>>a.kor>>a.szin;
 }
 
 void operator<<(ostream& out, struct Allat a) {
-	cout<<a.nev<<": "<<a.kor<<", "<<a.szin<<endl;
+	cout<<a.nev<<": "<<a.fajta<<", "<<a.kor<<", "<<a.szin<<endl;
 }
 
 string operator<(struct Allat a, string s) {
@@ -24,6 +25,8 @@ string operator<(struct Allat a, string s) {
             return a.kor;
       } else if (s == "szín") {
             return a.szin;
+      } else if (s == "fajta") {
+            return a.fajta;
       } else return "";
 }
 
@@ -42,6 +45,10 @@ void search(vector<struct Allat> v) {
 
 int main() {
 	fstream in("menhely.txt");
+	if (!in) {
+        cout << "File error" << endl;
+        return 1;
+    }
 	vector<struct Allat> v;
 	struct Allat a;
 	string row;
