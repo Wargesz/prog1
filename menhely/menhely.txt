@@ -1,0 +1,10 @@
+Golyó 2 fekete
+Iván 3 fehér
+Kacér 9 vörös
+Legény 7 fehér
+Pamacs 10 fekete
+Ubul 6 barna
+Walter 8 barna
+Falat 3 barna
+Zamat 2 tarka
+Bogyó 2 fehér
