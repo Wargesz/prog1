@@ -5,11 +5,10 @@
 #define HEIGHT 20
 using namespace std;
 
-class Ball {
-      public:
-            int x = 4;
-            int y = 12;
-            string m = "ne";
+struct Ball {
+      int x;
+      int y;
+      string m;
 };
 
 void draw(Ball b) {
