@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <map>
 using namespace std;
 
 struct Tranzakcio {
@@ -37,6 +38,16 @@ int main() {
       }
       for (int i = 0; i < 3; i++) {
             cout<<items[i]<<": "<<(float)itemCount[i]/(float)tranzakciok.size()<<endl;
+      }
+      map<string,int> strings;
+      for (struct Tranzakcio t : tranzakciok) {
+            strings[t.items] = 0;
+      }
+      for (struct Tranzakcio t : tranzakciok) {
+            strings[t.items]++;
+      }
+      for (pair<string,int> p : strings) {
+            cout<<(float)p.second/(float)tranzakciok.size()<<" "<<p.first<<endl;
       }
       return 0;
 }
